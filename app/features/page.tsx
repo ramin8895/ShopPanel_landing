@@ -52,6 +52,21 @@ export default function Page() {
                 جزئیات <Icon name="arrow-left" />
               </span>
             </Link>{" "}
+            <Link className="card reveal" href="/features/accounting-inventory/">
+              <span className="card__ic ic-green">
+                <Icon name="chart-bar" />
+              </span>
+              <h3>
+                حسابداری و انبارداری <span className="tag tag--new">جدید</span>
+              </h3>
+              <p>
+                انبارگردانی، فاکتور خرید و تأمین‌کننده، هزینه‌ها و گزارش سود و زیان با بهای میانگین موزون. در
+                پلن حرفه‌ای.
+              </p>
+              <span className="card__more">
+                جزئیات <Icon name="arrow-left" />
+              </span>
+            </Link>{" "}
             <Link className="card reveal" href="/features/order-management/">
               <span className="card__ic ic-teal">
                 <Icon name="truck-delivery" />

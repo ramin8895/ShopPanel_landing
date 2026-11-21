@@ -8,6 +8,7 @@ import { page as p_blog_store_builder_vs_wordpress } from "./pages/blog-store-bu
 import { page as p_blog_what_is_store_builder } from "./pages/blog-what-is-store-builder";
 import { page as p_contact } from "./pages/contact";
 import { page as p_create_online_store } from "./pages/create-online-store";
+import { page as p_features_accounting_inventory } from "./pages/features-accounting-inventory";
 import { page as p_features_custom_domain } from "./pages/features-custom-domain";
 import { page as p_features_discounts_loyalty } from "./pages/features-discounts-loyalty";
 import { page as p_features } from "./pages/features";
@@ -26,6 +27,7 @@ import { page as p_solutions_digital_products } from "./pages/solutions-digital-
 import { page as p_solutions_instagram_sellers } from "./pages/solutions-instagram-sellers";
 
 export const pages: PageData[] = [
+  p_features_accounting_inventory,
   p_about,
   p_blog_enamad_guide,
   p_blog,

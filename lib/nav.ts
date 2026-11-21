@@ -6,7 +6,7 @@ export const FEATURE_LINKS: MegaLink[] = [
     icon: "credit-card",
     tone: "ic-blue",
     title: "درگاه پرداخت و اقساطی",
-    sub: "زرین‌پال، ترب‌پی، پرداخت در محل",
+    sub: "زرین‌پال، ترب‌پی، کارت‌به‌کارت، پرداخت در محل",
   },
   {
     href: "/features/torob/",
@@ -42,6 +42,13 @@ export const FEATURE_LINKS: MegaLink[] = [
     tone: "ic-rose",
     title: "تخفیف و باشگاه مشتریان",
     sub: "رویداد فروش، کد تخفیف، امتیاز",
+  },
+  {
+    href: "/features/accounting-inventory/",
+    icon: "chart-bar",
+    tone: "ic-green",
+    title: "حسابداری و انبارداری",
+    sub: "موجودی، خرید، هزینه و سود",
   },
   {
     href: "/features/order-management/",
@@ -100,6 +107,7 @@ export const FOOTER_COLUMNS: { title: string; links: { href: string; label: stri
       { href: "/features/seo/", label: "ابزارهای سئو" },
       { href: "/features/themes/", label: "قالب‌های فروشگاه" },
       { href: "/features/invoice/", label: "فاکتور رسمی" },
+      { href: "/features/accounting-inventory/", label: "حسابداری و انبارداری" },
     ],
   },
   {

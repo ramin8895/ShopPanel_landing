@@ -132,7 +132,7 @@ export function Header() {
                 </Link>
               ))}
               <div className="mega__foot">
-                <span>همه‌ی امکانات در همه‌ی پلن‌ها فعال است.</span>
+                <span>امکانات هر پلن را در جدول قیمت‌ها ببین.</span>
                 <Link href="/features/" onClick={closeAll}>
                   مشاهده همه امکانات <Icon name="arrow-left" />
                 </Link>

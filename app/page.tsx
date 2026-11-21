@@ -1009,6 +1009,10 @@ export default function Page() {
                   </li>
                   <li>
                     <Icon name="check" />
+                    <span>حسابداری و انبارداری: خرید، هزینه و سود و زیان</span>
+                  </li>
+                  <li>
+                    <Icon name="check" />
                     <span>
                       ردیابی گوگل (<span className="en">GA4</span>، GTM و Google Ads)
                     </span>

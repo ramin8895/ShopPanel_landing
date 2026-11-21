@@ -109,6 +109,11 @@ export const page: PageData = {
           position: 10,
           url: "https://nexcart.ir/features/custom-domain/",
         },
+        {
+          "@type": "ListItem",
+          position: 11,
+          url: "https://nexcart.ir/features/accounting-inventory/",
+        },
       ],
     },
   ],

@@ -252,6 +252,13 @@ export default function Page() {
                   </li>
                   <li>
                     <Icon name="check" />
+                    <span>
+                      <Link href="/features/accounting-inventory/">حسابداری و انبارداری</Link>: انبارگردانی،
+                      فاکتور خرید، هزینه‌ها و گزارش سود و زیان
+                    </span>
+                  </li>
+                  <li>
+                    <Icon name="check" />
                     <span>راه‌اندازی تحویلی: ورود محصولات و تنظیم فروشگاه با ما</span>
                   </li>
                   <li>
@@ -659,6 +666,24 @@ export default function Page() {
                   <td className="hl">
                     <Icon name="circle-check" className="i--yes" />
                     <span className="sr-only">دارد</span>
+                  </td>
+                  <td>
+                    <Icon name="circle-check" className="i--yes" />
+                    <span className="sr-only">دارد</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <Link href="/features/accounting-inventory/">حسابداری و انبارداری</Link> (خرید، هزینه، سود
+                    و زیان)
+                  </th>
+                  <td>
+                    <Icon name="minus" className="i--no" />
+                    <span className="sr-only">ندارد</span>
+                  </td>
+                  <td className="hl">
+                    <Icon name="minus" className="i--no" />
+                    <span className="sr-only">ندارد</span>
                   </td>
                   <td>
                     <Icon name="circle-check" className="i--yes" />
