@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { Icon } from "./Icon";
 import { FOOTER_COLUMNS } from "@/lib/nav";
-import { PANEL_LOGIN_URL, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL } from "@/lib/site";
+import {
+  INSTAGRAM_HANDLE,
+  INSTAGRAM_URL,
+  PANEL_LOGIN_URL,
+  PHONE_DISPLAY,
+  PHONE_TEL,
+  WHATSAPP_URL,
+} from "@/lib/site";
 
 const ENAMAD_HREF = "https://trustseal.enamad.ir/?id=6955973&Code=atTcslBIPIrOjXqBQ0Cx4ZXT8TMkgn1z";
 const ENAMAD_IMG = "https://trustseal.enamad.ir/logo.aspx?id=6955973&Code=atTcslBIPIrOjXqBQ0Cx4ZXT8TMkgn1z";
@@ -33,6 +40,12 @@ export function Footer() {
                 <Icon name="brand-whatsapp" />
                 <a href={WHATSAPP_URL} rel="noopener" target="_blank">
                   واتساپ پشتیبانی
+                </a>
+              </li>
+              <li>
+                <Icon name="brand-instagram" />
+                <a href={INSTAGRAM_URL} rel="me noopener" target="_blank">
+                  اینستاگرام <span className="ltr">@{INSTAGRAM_HANDLE}</span>
                 </a>
               </li>
               <li>

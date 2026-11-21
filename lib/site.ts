@@ -6,3 +6,5 @@ export const WHATSAPP_URL = "https://wa.me/989145275658";
 export const PANEL_LOGIN_URL = "https://dash.nexcart.ir/login";
 export const PANEL_REGISTER_URL = "https://dash.nexcart.ir/register";
 export const ENAMAD_META = "44615027";
+export const INSTAGRAM_URL = "https://www.instagram.com/nexcartshoppanel/";
+export const INSTAGRAM_HANDLE = "nexcartshoppanel";

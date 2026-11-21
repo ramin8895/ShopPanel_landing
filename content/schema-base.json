@@ -41,7 +41,10 @@
     "areaServed": {
       "@type": "Country",
       "name": "ایران"
-    }
+    },
+    "sameAs": [
+      "https://www.instagram.com/nexcartshoppanel/"
+    ]
   },
   "WebSite": {
     "@type": "WebSite",
