@@ -1,0 +1,58 @@
+{
+  "Organization": {
+    "@type": "Organization",
+    "@id": "https://nexcart.ir/#organization",
+    "name": "نکس‌کارت",
+    "alternateName": "NexCart",
+    "url": "https://nexcart.ir/",
+    "logo": {
+      "@type": "ImageObject",
+      "@id": "https://nexcart.ir/#logo",
+      "url": "https://nexcart.ir/icon-512.png",
+      "width": 512,
+      "height": 512,
+      "caption": "نکس‌کارت"
+    },
+    "image": {
+      "@id": "https://nexcart.ir/#logo"
+    },
+    "description": "نکس‌کارت (NexCart) فروشگاه‌ساز ایرانی برای ساخت و مدیریت فروشگاه اینترنتی است.",
+    "telephone": "+98-914-527-5658",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+98-914-527-5658",
+        "contactType": "sales",
+        "areaServed": "IR",
+        "availableLanguage": [
+          "fa"
+        ]
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+98-914-527-5658",
+        "contactType": "customer support",
+        "areaServed": "IR",
+        "availableLanguage": [
+          "fa"
+        ]
+      }
+    ],
+    "areaServed": {
+      "@type": "Country",
+      "name": "ایران"
+    }
+  },
+  "WebSite": {
+    "@type": "WebSite",
+    "@id": "https://nexcart.ir/#website",
+    "url": "https://nexcart.ir/",
+    "name": "نکس‌کارت",
+    "alternateName": "NexCart",
+    "description": "فروشگاه‌ساز ایرانی برای ساخت فروشگاه اینترنتی",
+    "publisher": {
+      "@id": "https://nexcart.ir/#organization"
+    },
+    "inLanguage": "fa-IR"
+  }
+}

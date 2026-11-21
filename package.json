@@ -1,0 +1,23 @@
+{
+  "name": "nexcart-landing",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/postbuild.mjs",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"{app,components,content,lib}/**/*.{ts,tsx}\""
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "prettier": "3.4.2",
+    "typescript": "5.7.2"
+  }
+}
