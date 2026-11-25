@@ -162,6 +162,26 @@ export default function Page() {
                   <span>۹ مهر ۱۴۰۵</span>
                 </span>
               </div>
+            </Link>{" "}
+            <Link className="post-card reveal" href="/blog/woocommerce-to-store-builder/">
+              <div className="post-card__cover">
+                <img
+                  src="/og/blog-woocommerce-to-store-builder.jpg"
+                  width={1200}
+                  height={630}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="post-card__body">
+                <span className="tag">راهنمای فنی</span>
+                <h3>مهاجرت از ووکامرس به فروشگاه‌ساز بدون افت سئو</h3>
+                <p>فهرست آدرس‌ها، نقشه‌ی ریدایرکت ۳۰۱ و پایش بعد از انتقال.</p>
+                <span className="post-card__meta">
+                  <span>۴ آذر ۱۴۰۵</span>
+                </span>
+              </div>
             </Link>
           </div>
         </div>

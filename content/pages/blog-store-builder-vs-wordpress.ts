@@ -2,7 +2,7 @@ import type { PageData } from "@/lib/types";
 
 export const page: PageData = {
   path: "/blog/store-builder-vs-wordpress/",
-  title: "فروشگاه ساز یا وردپرس (ووکامرس)؟ مقایسه‌ی بی‌طرفانه با طراحی اختصاصی",
+  title: "فروشگاه ساز یا وردپرس (ووکامرس)؟ مقایسه‌ی بی‌طرفانه",
   description:
     "فروشگاه‌ساز، وردپرس و ووکامرس یا طراحی سایت اختصاصی؟ مقایسه‌ی فکت‌محور هزینه، زمان، نگهداری، امنیت، انعطاف و مالکیت، و اینکه هر روش برای چه کسی مناسب است.",
   image: "/og/blog-store-builder-vs-wordpress.jpg",
@@ -41,7 +41,7 @@ export const page: PageData = {
       "@type": "WebPage",
       "@id": "https://nexcart.ir/blog/store-builder-vs-wordpress/#webpage",
       url: "https://nexcart.ir/blog/store-builder-vs-wordpress/",
-      name: "فروشگاه ساز یا وردپرس (ووکامرس)؟ مقایسه‌ی بی‌طرفانه با طراحی اختصاصی",
+      name: "فروشگاه ساز یا وردپرس (ووکامرس)؟ مقایسه‌ی بی‌طرفانه",
       description:
         "فروشگاه‌ساز، وردپرس و ووکامرس یا طراحی سایت اختصاصی؟ مقایسه‌ی فکت‌محور هزینه، زمان، نگهداری، امنیت، انعطاف و مالکیت، و اینکه هر روش برای چه کسی مناسب است.",
       isPartOf: {

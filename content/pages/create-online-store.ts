@@ -2,7 +2,7 @@ import type { PageData } from "@/lib/types";
 
 export const page: PageData = {
   path: "/create-online-store/",
-  title: "ساخت فروشگاه اینترنتی | راهنمای قدم‌به‌قدم راه‌اندازی فروشگاه آنلاین",
+  title: "ساخت فروشگاه اینترنتی | راهنمای قدم‌به‌قدم راه‌اندازی",
   description:
     "برای ساخت فروشگاه اینترنتی چه لازم است؟ دامنه، هاست، درگاه پرداخت، اینماد و مراحل راه‌اندازی فروشگاه آنلاین بدون کدنویسی، با مقایسه‌ی روش‌ها و هزینه‌ها.",
   image: "/og/create-online-store.jpg",
@@ -45,7 +45,7 @@ export const page: PageData = {
       "@type": "WebPage",
       "@id": "https://nexcart.ir/create-online-store/#webpage",
       url: "https://nexcart.ir/create-online-store/",
-      name: "ساخت فروشگاه اینترنتی | راهنمای قدم‌به‌قدم راه‌اندازی فروشگاه آنلاین",
+      name: "ساخت فروشگاه اینترنتی | راهنمای قدم‌به‌قدم راه‌اندازی",
       description:
         "برای ساخت فروشگاه اینترنتی چه لازم است؟ دامنه، هاست، درگاه پرداخت، اینماد و مراحل راه‌اندازی فروشگاه آنلاین بدون کدنویسی، با مقایسه‌ی روش‌ها و هزینه‌ها.",
       isPartOf: {
