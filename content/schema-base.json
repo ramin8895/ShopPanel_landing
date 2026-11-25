@@ -3,7 +3,7 @@
     "@type": "Organization",
     "@id": "https://nexcart.ir/#organization",
     "name": "نکس‌کارت",
-    "alternateName": "NexCart",
+    "alternateName": ["NexCart", "نکس کارت", "نکسکارت", "nexcart.ir"],
     "url": "https://nexcart.ir/",
     "logo": {
       "@type": "ImageObject",
@@ -51,7 +51,7 @@
     "@id": "https://nexcart.ir/#website",
     "url": "https://nexcart.ir/",
     "name": "نکس‌کارت",
-    "alternateName": "NexCart",
+    "alternateName": ["NexCart", "نکس کارت", "نکسکارت", "nexcart.ir"],
     "description": "فروشگاه‌ساز ایرانی برای ساخت فروشگاه اینترنتی",
     "publisher": {
       "@id": "https://nexcart.ir/#organization"
