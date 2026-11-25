@@ -21,7 +21,7 @@ export default function Page() {
               <Icon name="arrow-left" />
             </Link>
             <h1 className="hero__title">
-              فروشگاه‌ساز نکس‌کارت؛ فروشگاه اینترنتی‌ات را <span className="grad">بدون کدنویسی</span> بساز
+              فروشگاه‌ساز نکس‌کارت (NexCart)؛ فروشگاه اینترنتی‌ات را <span className="grad">بدون کدنویسی</span> بساز
             </h1>
             <p className="hero__sub">
               محصول اضافه کن، درگاه زرین‌پال یا خرید اقساطی ترب‌پی را وصل کن، قالب فروشگاه را انتخاب کن و فروش
