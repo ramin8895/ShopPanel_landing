@@ -2,7 +2,7 @@ import type { PageData } from "@/lib/types";
 
 export const page: PageData = {
   path: "/features/product-management/",
-  title: "مدیریت محصولات فروشگاه اینترنتی: تنوع، موجودی و دسته‌بندی | نکس‌کارت",
+  title: "مدیریت محصولات فروشگاه اینترنتی: تنوع و موجودی | نکس‌کارت",
   description:
     "مدیریت محصول در فروشگاه‌ساز نکس‌کارت: تنوع رنگ و سایز با موجودی و SKU جدا، چند تصویر، دسته‌بندی درختی، برند، نظر و امتیاز با تأیید مدیر و پرسش‌وپاسخ زیر محصول.",
   image: "/og/features-product-management.jpg",
@@ -45,7 +45,7 @@ export const page: PageData = {
       "@type": "WebPage",
       "@id": "https://nexcart.ir/features/product-management/#webpage",
       url: "https://nexcart.ir/features/product-management/",
-      name: "مدیریت محصولات فروشگاه اینترنتی: تنوع، موجودی و دسته‌بندی | نکس‌کارت",
+      name: "مدیریت محصولات فروشگاه اینترنتی: تنوع و موجودی | نکس‌کارت",
       description:
         "مدیریت محصول در فروشگاه‌ساز نکس‌کارت: تنوع رنگ و سایز با موجودی و SKU جدا، چند تصویر، دسته‌بندی درختی، برند، نظر و امتیاز با تأیید مدیر و پرسش‌وپاسخ زیر محصول.",
       isPartOf: {

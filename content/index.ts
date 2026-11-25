@@ -4,6 +4,7 @@ import { page as p_blog_enamad_guide } from "./pages/blog-enamad-guide";
 import { page as p_blog } from "./pages/blog";
 import { page as p_blog_online_store_cost } from "./pages/blog-online-store-cost";
 import { page as p_blog_online_store_seo } from "./pages/blog-online-store-seo";
+import { page as p_blog_woocommerce } from "./pages/blog-woocommerce-to-store-builder";
 import { page as p_blog_store_builder_vs_wordpress } from "./pages/blog-store-builder-vs-wordpress";
 import { page as p_blog_what_is_store_builder } from "./pages/blog-what-is-store-builder";
 import { page as p_contact } from "./pages/contact";
@@ -33,6 +34,7 @@ export const pages: PageData[] = [
   p_blog,
   p_blog_online_store_cost,
   p_blog_online_store_seo,
+  p_blog_woocommerce,
   p_blog_store_builder_vs_wordpress,
   p_blog_what_is_store_builder,
   p_contact,

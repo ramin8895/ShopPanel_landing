@@ -2,7 +2,7 @@ import type { PageData } from "@/lib/types";
 
 export const page: PageData = {
   path: "/about/",
-  title: "درباره نکس‌کارت | فروشگاه‌ساز ایرانی",
+  title: "درباره نکس‌کارت (NexCart) | فروشگاه‌ساز آنلاین ایرانی",
   description:
     "نکس‌کارت (NexCart) فروشگاه‌ساز ایرانی برای ساخت و مدیریت فروشگاه اینترنتی است. با اصول کاری، فناوری و آخرین به‌روزرسانی‌های پلتفرم آشنا شو.",
   image: "/og/about.jpg",
@@ -23,7 +23,7 @@ export const page: PageData = {
       "@type": "AboutPage",
       "@id": "https://nexcart.ir/about/#webpage",
       url: "https://nexcart.ir/about/",
-      name: "درباره نکس‌کارت | فروشگاه‌ساز ایرانی",
+      name: "درباره نکس‌کارت (NexCart) | فروشگاه‌ساز آنلاین ایرانی",
       description:
         "نکس‌کارت (NexCart) فروشگاه‌ساز ایرانی برای ساخت و مدیریت فروشگاه اینترنتی است. با اصول کاری، فناوری و آخرین به‌روزرسانی‌های پلتفرم آشنا شو.",
       isPartOf: {
