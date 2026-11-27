@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
+import { Sale } from "@/components/Sale";
 import { Faq } from "@/components/Faq";
 import { CtaSection } from "@/components/CtaSection";
 import { JsonLd } from "@/components/JsonLd";
@@ -795,21 +796,38 @@ export default function Page() {
             </p>
           </div>
           <div className="pricing" data-prefix="h">
+            <Sale
+              sale={
+                <div className="callout callout--ok" style={{ maxWidth: "640px", margin: "0 auto 20px", textAlign: "right" }}>
+                  <Icon name="circle-check" />
+                  <div>
+                    <strong>تخفیف بلک فرایدی تا جمعه ۱۳ آذر:</strong> اشتراک ۳ ماهه ۳۰٪، ۶ ماهه ۴۰٪ و ۱۲ ماهه ۵۰٪
+                    ارزان‌تر. مدت اشتراک را انتخاب کن.
+                  </div>
+                </div>
+              }
+            />
             <fieldset className="term-switch">
               <legend className="sr-only">مدت اشتراک</legend>
               <input type="radio" name="h-term" id="h-t1" value="1" defaultChecked />
               <label htmlFor="h-t1">۱ ماهه</label>
               <input type="radio" name="h-term" id="h-t3" value="3" />
               <label htmlFor="h-t3">
-                ۳ ماهه<em>۱۰٪ تخفیف</em>
+                ۳ ماهه<Sale sale={<em>۳۰٪ تخفیف</em>}>
+                  <em>۱۰٪ تخفیف</em>
+                </Sale>
               </label>
               <input type="radio" name="h-term" id="h-t6" value="6" />
               <label htmlFor="h-t6">
-                ۶ ماهه<em>۱۵٪ تخفیف</em>
+                ۶ ماهه<Sale sale={<em>۴۰٪ تخفیف</em>}>
+                  <em>۱۵٪ تخفیف</em>
+                </Sale>
               </label>
               <input type="radio" name="h-term" id="h-t12" value="12" />
               <label htmlFor="h-t12">
-                ۱۲ ماهه<em>۲۰٪ تخفیف</em>
+                ۱۲ ماهه<Sale sale={<em>۵۰٪ تخفیف</em>}>
+                  <em>۲۰٪ تخفیف</em>
+                </Sale>
               </label>
             </fieldset>
             <div className="tiers">
@@ -829,22 +847,61 @@ export default function Page() {
                     <div className="tier__sub">پرداخت ماهانه</div>
                   </div>
                   <div className="tier__p" data-t="3">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۶۲۳٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۱٬۸۶۹٬۰۰۰ تومان برای ۳ ماه (<del>۲٬۴۰۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۸۰۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۲٬۴۰۰٬۰۰۰ تومان برای ۳ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="6">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۵۳۴٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۳٬۲۰۴٬۰۰۰ تومان برای ۶ ماه (<del>۴٬۵۶۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۷۶۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۴٬۵۶۰٬۰۰۰ تومان برای ۶ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="12">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۴۴۵٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۵٬۳۴۰٬۰۰۰ تومان برای ۱۲ ماه (<del>۸٬۵۲۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۷۱۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۸٬۵۲۰٬۰۰۰ تومان برای ۱۲ ماه</div>
+                    </Sale>
                   </div>
                 </div>
                 <a href="https://dash.nexcart.ir/register" className="btn btn--soft btn--block">
@@ -899,22 +956,61 @@ export default function Page() {
                     <div className="tier__sub">پرداخت ماهانه</div>
                   </div>
                   <div className="tier__p" data-t="3">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۱٬۲۶۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۳٬۷۸۰٬۰۰۰ تومان برای ۳ ماه (<del>۴٬۸۶۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۱٬۶۲۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۴٬۸۶۰٬۰۰۰ تومان برای ۳ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="6">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۱٬۰۸۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۶٬۴۸۰٬۰۰۰ تومان برای ۶ ماه (<del>۹٬۱۸۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۱٬۵۳۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۹٬۱۸۰٬۰۰۰ تومان برای ۶ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="12">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۹۰۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۱۰٬۸۰۰٬۰۰۰ تومان برای ۱۲ ماه (<del>۱۷٬۲۸۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۱٬۴۴۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۱۷٬۲۸۰٬۰۰۰ تومان برای ۱۲ ماه</div>
+                    </Sale>
                   </div>
                 </div>
                 <a href="https://dash.nexcart.ir/register" className="btn btn--primary btn--block">
@@ -972,22 +1068,61 @@ export default function Page() {
                     <div className="tier__sub">پرداخت ماهانه</div>
                   </div>
                   <div className="tier__p" data-t="3">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۲٬۱۰۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۶٬۳۰۰٬۰۰۰ تومان برای ۳ ماه (<del>۸٬۱۰۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۲٬۷۰۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۸٬۱۰۰٬۰۰۰ تومان برای ۳ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="6">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۱٬۸۰۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۱۰٬۸۰۰٬۰۰۰ تومان برای ۶ ماه (<del>۱۵٬۳۰۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۲٬۵۵۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۱۵٬۳۰۰٬۰۰۰ تومان برای ۶ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="12">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۱٬۵۰۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۱۸٬۰۰۰٬۰۰۰ تومان برای ۱۲ ماه (<del>۲۸٬۸۰۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۲٬۴۰۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۲۸٬۸۰۰٬۰۰۰ تومان برای ۱۲ ماه</div>
+                    </Sale>
                   </div>
                 </div>
                 <a href="https://dash.nexcart.ir/register" className="btn btn--soft btn--block">

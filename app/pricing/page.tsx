@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Sale } from "@/components/Sale";
 import { Faq } from "@/components/Faq";
 import { CtaSection } from "@/components/CtaSection";
 import { JsonLd } from "@/components/JsonLd";
@@ -46,21 +47,38 @@ export default function Page() {
             پلن‌های اشتراک
           </h2>
           <div className="pricing" data-prefix="p">
+            <Sale
+              sale={
+                <div className="callout callout--ok" style={{ maxWidth: "640px", margin: "0 auto 20px", textAlign: "right" }}>
+                  <Icon name="circle-check" />
+                  <div>
+                    <strong>تخفیف بلک فرایدی تا جمعه ۱۳ آذر:</strong> اشتراک ۳ ماهه ۳۰٪، ۶ ماهه ۴۰٪ و ۱۲ ماهه ۵۰٪
+                    ارزان‌تر. مدت اشتراک را انتخاب کن.
+                  </div>
+                </div>
+              }
+            />
             <fieldset className="term-switch">
               <legend className="sr-only">مدت اشتراک</legend>
               <input type="radio" name="p-term" id="p-t1" value="1" defaultChecked />
               <label htmlFor="p-t1">۱ ماهه</label>
               <input type="radio" name="p-term" id="p-t3" value="3" />
               <label htmlFor="p-t3">
-                ۳ ماهه<em>۱۰٪ تخفیف</em>
+                ۳ ماهه<Sale sale={<em>۳۰٪ تخفیف</em>}>
+                  <em>۱۰٪ تخفیف</em>
+                </Sale>
               </label>
               <input type="radio" name="p-term" id="p-t6" value="6" />
               <label htmlFor="p-t6">
-                ۶ ماهه<em>۱۵٪ تخفیف</em>
+                ۶ ماهه<Sale sale={<em>۴۰٪ تخفیف</em>}>
+                  <em>۱۵٪ تخفیف</em>
+                </Sale>
               </label>
               <input type="radio" name="p-term" id="p-t12" value="12" />
               <label htmlFor="p-t12">
-                ۱۲ ماهه<em>۲۰٪ تخفیف</em>
+                ۱۲ ماهه<Sale sale={<em>۵۰٪ تخفیف</em>}>
+                  <em>۲۰٪ تخفیف</em>
+                </Sale>
               </label>
             </fieldset>
             <div className="tiers">
@@ -80,22 +98,61 @@ export default function Page() {
                     <div className="tier__sub">پرداخت ماهانه</div>
                   </div>
                   <div className="tier__p" data-t="3">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۶۲۳٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۱٬۸۶۹٬۰۰۰ تومان برای ۳ ماه (<del>۲٬۴۰۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۸۰۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۲٬۴۰۰٬۰۰۰ تومان برای ۳ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="6">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۵۳۴٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۳٬۲۰۴٬۰۰۰ تومان برای ۶ ماه (<del>۴٬۵۶۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۷۶۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۴٬۵۶۰٬۰۰۰ تومان برای ۶ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="12">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۴۴۵٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۵٬۳۴۰٬۰۰۰ تومان برای ۱۲ ماه (<del>۸٬۵۲۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۷۱۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۸٬۵۲۰٬۰۰۰ تومان برای ۱۲ ماه</div>
+                    </Sale>
                   </div>
                 </div>
                 <a href="https://dash.nexcart.ir/register" className="btn btn--soft btn--block">
@@ -150,22 +207,61 @@ export default function Page() {
                     <div className="tier__sub">پرداخت ماهانه</div>
                   </div>
                   <div className="tier__p" data-t="3">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۱٬۲۶۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۳٬۷۸۰٬۰۰۰ تومان برای ۳ ماه (<del>۴٬۸۶۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۱٬۶۲۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۴٬۸۶۰٬۰۰۰ تومان برای ۳ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="6">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۱٬۰۸۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۶٬۴۸۰٬۰۰۰ تومان برای ۶ ماه (<del>۹٬۱۸۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۱٬۵۳۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۹٬۱۸۰٬۰۰۰ تومان برای ۶ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="12">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۹۰۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۱۰٬۸۰۰٬۰۰۰ تومان برای ۱۲ ماه (<del>۱۷٬۲۸۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۱٬۴۴۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۱۷٬۲۸۰٬۰۰۰ تومان برای ۱۲ ماه</div>
+                    </Sale>
                   </div>
                 </div>
                 <a href="https://dash.nexcart.ir/register" className="btn btn--primary btn--block">
@@ -223,22 +319,61 @@ export default function Page() {
                     <div className="tier__sub">پرداخت ماهانه</div>
                   </div>
                   <div className="tier__p" data-t="3">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۲٬۱۰۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۶٬۳۰۰٬۰۰۰ تومان برای ۳ ماه (<del>۸٬۱۰۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۲٬۷۰۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۸٬۱۰۰٬۰۰۰ تومان برای ۳ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="6">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۱٬۸۰۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۱۰٬۸۰۰٬۰۰۰ تومان برای ۶ ماه (<del>۱۵٬۳۰۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۲٬۵۵۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۱۵٬۳۰۰٬۰۰۰ تومان برای ۶ ماه</div>
+                    </Sale>
                   </div>
                   <div className="tier__p" data-t="12">
+                    <Sale
+                      sale={
+                        <>
+                          <div className="tier__price">
+                            ۱٬۵۰۰٬۰۰۰<small>تومان / ماه</small>
+                          </div>
+                          <div className="tier__sub">
+                            پرداخت یک‌جا ۱۸٬۰۰۰٬۰۰۰ تومان برای ۱۲ ماه (<del>۲۸٬۸۰۰٬۰۰۰</del>)
+                          </div>
+                        </>
+                      }
+                    >
                     <div className="tier__price">
                       ۲٬۴۰۰٬۰۰۰<small>تومان / ماه</small>
                     </div>
                     <div className="tier__sub">پرداخت یک‌جا ۲۸٬۸۰۰٬۰۰۰ تومان برای ۱۲ ماه</div>
+                    </Sale>
                   </div>
                 </div>
                 <a href="https://dash.nexcart.ir/register" className="btn btn--soft btn--block">
@@ -327,7 +462,11 @@ export default function Page() {
           <div className="section__head">
             <span className="eyebrow">مقایسه‌ی پلن‌ها</span>
             <h2 id="compare-h">امکانات هر پلن، کنار هم</h2>
-            <p>قیمت‌های جدول برای اشتراک ماهانه است؛ با اشتراک چندماهه تا ۲۰٪ کمتر می‌پردازی.</p>
+            <p>
+              <Sale sale="قیمت‌های جدول برای اشتراک ماهانه است؛ در تخفیف بلک فرایدی با اشتراک چندماهه تا ۵۰٪ کمتر می‌پردازی.">
+                قیمت‌های جدول برای اشتراک ماهانه است؛ با اشتراک چندماهه تا ۲۰٪ کمتر می‌پردازی.
+              </Sale>
+            </p>
           </div>
           <div className="table-wrap cmp-wrap" tabIndex={0} role="region" aria-label="جدول مقایسه‌ی پلن‌ها">
             <table className="table cmp">
@@ -354,17 +493,23 @@ export default function Page() {
                   <td>
                     <b>۸۹۰ هزار</b> تومان در ماه
                     <br />
-                    <small>سالانه ۷۱۰ هزار در ماه</small>
+                    <small>
+                      <Sale sale="سالانه ۴۴۵ هزار در ماه">سالانه ۷۱۰ هزار در ماه</Sale>
+                    </small>
                   </td>
                   <td className="hl">
                     <b>۱٫۸ میلیون</b> تومان در ماه
                     <br />
-                    <small>سالانه ۱٫۴۴ میلیون در ماه</small>
+                    <small>
+                      <Sale sale="سالانه ۹۰۰ هزار در ماه">سالانه ۱٫۴۴ میلیون در ماه</Sale>
+                    </small>
                   </td>
                   <td>
                     <b>۳ میلیون</b> تومان در ماه
                     <br />
-                    <small>سالانه ۲٫۴ میلیون در ماه</small>
+                    <small>
+                      <Sale sale="سالانه ۱٫۵ میلیون در ماه">سالانه ۲٫۴ میلیون در ماه</Sale>
+                    </small>
                   </td>
                 </tr>
               </tbody>
